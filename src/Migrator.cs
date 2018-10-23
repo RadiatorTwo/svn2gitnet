@@ -55,7 +55,7 @@ namespace Svn2GitNet
                 throw new MigrateException(ExceptionHelper.ExceptionMessage.MISSING_SVN_URL_PARAMETER);
             }
 
-            _svnUrl = _args[0].Replace(" ", "\\ ");
+            _svnUrl = _args[0];
         }
 
         public void Run()
